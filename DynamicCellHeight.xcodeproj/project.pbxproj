@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		688FBB1A1C504A3A006D5A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB191C504A3A006D5A85 /* AppDelegate.swift */; };
-		688FBB1C1C504A3A006D5A85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB1B1C504A3A006D5A85 /* ViewController.swift */; };
 		688FBB1F1C504A3A006D5A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688FBB1D1C504A3A006D5A85 /* Main.storyboard */; };
 		688FBB211C504A3A006D5A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688FBB201C504A3A006D5A85 /* Assets.xcassets */; };
 		688FBB241C504A3A006D5A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688FBB221C504A3A006D5A85 /* LaunchScreen.storyboard */; };
 		688FBB2F1C504A3A006D5A85 /* DynamicCellHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB2E1C504A3A006D5A85 /* DynamicCellHeightTests.swift */; };
 		688FBB3A1C504A3B006D5A85 /* DynamicCellHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB391C504A3B006D5A85 /* DynamicCellHeightUITests.swift */; };
+		688FBB481C504A64006D5A85 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB471C504A64006D5A85 /* TableViewController.swift */; };
+		688FBB4A1C504B51006D5A85 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FBB491C504B51006D5A85 /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		688FBB161C504A3A006D5A85 /* DynamicCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBB191C504A3A006D5A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		688FBB1B1C504A3A006D5A85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		688FBB1E1C504A3A006D5A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		688FBB201C504A3A006D5A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		688FBB231C504A3A006D5A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		688FBB351C504A3A006D5A85 /* DynamicCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688FBB391C504A3B006D5A85 /* DynamicCellHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellHeightUITests.swift; sourceTree = "<group>"; };
 		688FBB3B1C504A3B006D5A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688FBB471C504A64006D5A85 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		688FBB491C504B51006D5A85 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				688FBB191C504A3A006D5A85 /* AppDelegate.swift */,
-				688FBB1B1C504A3A006D5A85 /* ViewController.swift */,
+				688FBB471C504A64006D5A85 /* TableViewController.swift */,
 				688FBB1D1C504A3A006D5A85 /* Main.storyboard */,
+				688FBB491C504B51006D5A85 /* ImageTableViewCell.swift */,
 				688FBB201C504A3A006D5A85 /* Assets.xcassets */,
 				688FBB221C504A3A006D5A85 /* LaunchScreen.storyboard */,
 				688FBB251C504A3A006D5A85 /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				688FBB1C1C504A3A006D5A85 /* ViewController.swift in Sources */,
+				688FBB4A1C504B51006D5A85 /* ImageTableViewCell.swift in Sources */,
+				688FBB481C504A64006D5A85 /* TableViewController.swift in Sources */,
 				688FBB1A1C504A3A006D5A85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				688FBB401C504A3B006D5A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		688FBB411C504A3B006D5A85 /* Build configuration list for PBXNativeTarget "DynamicCellHeightTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				688FBB431C504A3B006D5A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		688FBB441C504A3B006D5A85 /* Build configuration list for PBXNativeTarget "DynamicCellHeightUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				688FBB461C504A3B006D5A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
